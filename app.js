@@ -54,7 +54,7 @@
       $('.bookConsult').text('Submitting...')
       $('#bookConsult').attr('disabled', true)
 
-      if (!phone || phone.length < 10) {
+      if (!phone) {
         toastr.warning('Please enter a valid phone number');
         $('#bookConsult').attr('disabled', false);
         return;
