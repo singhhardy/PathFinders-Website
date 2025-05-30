@@ -50,13 +50,17 @@
 
     // === BOOK A CALL ===
     $('.bookConsult').on('click', function () {
-      const phone = $('#consultPhone').val().trim();
-      $('.bookConsult').text('Submitting...')
-      $('#bookConsult').attr('disabled', true)
+      const $btn = $(this);
+      // Find the input with class "consultPhone" closest to the clicked button
+      const phone = $btn.closest('.btn-group').find('.consultPhone').val().trim();
 
-      if (!phone) {
+      $btn.text('Submitting...');
+      $btn.attr('disabled', true);
+
+      if (!phone || phone.length < 10) {
         toastr.warning('Please enter a valid phone number');
-        $('#bookConsult').attr('disabled', false);
+        $btn.attr('disabled', false);
+        $btn.text('Submit');
         return;
       }
 
@@ -67,19 +71,21 @@
         data: JSON.stringify({ phone }),
         success: function (result) {
           if (result.success) {
-            $('#bookConsult').attr('disabled', false)
-            $('.bookConsult').text('Submit')
             toastr.success('Thank you! We’ll contact you soon.');
-            $('#consultPhone').val('');
+            $btn.closest('.btn-group').find('.consultPhone').val('');  // Clear input only in this group
+            $btn.attr('disabled', false);
+            $btn.text('Submit');
             $('#welcomeModal').modal('hide');
           } else {
             toastr.error('Could not send request. Please try again.');
+            $btn.attr('disabled', false);
+            $btn.text('Submit');
           }
         },
         error: function () {
-          $('#bookConsult').attr('disabled', false)
-          $('.bookConsult').text('Submit')
           toastr.error('Something went wrong. Please try again later.');
+          $btn.attr('disabled', false);
+          $btn.text('Submit');
         }
       });
     });
