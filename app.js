@@ -61,7 +61,7 @@
       }
 
       $.ajax({
-        url: 'http://localhost:4050/book-call',
+        url: 'https://pb-backend-five.vercel.app/book-call',
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({ phone }),
