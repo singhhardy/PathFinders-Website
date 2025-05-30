@@ -236,10 +236,10 @@ h6 {
   line-height: 1;
 }
 
-.header .logo img {
+/* .header .logo img {
   max-height: 36px;
   margin-right: 8px;
-}
+} */
 
 .header .logo h1 {
   font-size: 30px;
@@ -576,7 +576,7 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -954,6 +954,30 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 10px 0 0 0;
   font-size: 24px;
+}
+
+.primary-btn{
+  background: var(--accent-color);
+  color: #fff !important;
+  border: none;
+}
+
+.primary-btn:active,
+.primary-btn:focus,
+.primary-btn:hover{
+  background: var(--accent-color) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.bookConsult:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed;
+  pointer-events: none; /* optional: prevents hover effects */
+}
+
+.form-control:focus{
+  box-shadow: none !important;
 }
 
 .hero .btn-get-started {
