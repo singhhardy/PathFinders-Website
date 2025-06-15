@@ -51,17 +51,17 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="#about">what we do</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#universities">University Visit</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <li><a href="#contact">Refer a friend</a></li>
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="./about.html">what we do</a></li>
+          <li><a href="#universities">Colleges</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#contact">National Scholarship Scheme</a></li>
-              <li><a href="#contact">ST/SC Scholarship</a></li>
-              <li><a href="#contact">Minority Scholarship</a></li>
-              <li><a href="#contact">Earlybird Scholarship</a></li>
+              <li><a href="#services">Career Counselling</a></li>
+              <li><a href="#services">Admission Guidance</a></li>
+              <li><a href="#universities">College & Course Selection</a></li>
+              <li><a href="#study-abroad">Study Abroad</a></li>
+              <li><a href="#services-2">Open Schooling Program</a></li>
+              <li><a href="#services-2">Online & Distance Education</a></li>  
             </ul>
           </li>
           <!-- <li><a href="#contact">Contact</a></li> -->
@@ -76,8 +76,7 @@
 
   <main class="main">
 
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/main-hero.jpg" alt="" data-aos="fade-in">
+    <section id="hero" class="hero section dark-background">      <img src="assets/img/main-hero.jpg" alt="" data-aos="fade-in" loading="lazy">
 
       <div class="container" style="margin-top: 100px;">
         <div class="row align-items-center">
@@ -176,7 +175,13 @@
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+                <a href="https://www.youtube.com/watch?v=PIjayo_sWXI" 
+                  class="glightbox pulsating-play-btn"
+                  data-type="video"
+                  data-source="youtube"
+                  data-width="900"
+                  data-height="506">
+                </a>
               </div>
             </div>
           </div>
@@ -186,7 +191,41 @@
 
     </section><!-- /About Section -->
 
-    <section class="container">
+    <!-- MNC Section -->
+    <section class="mnc-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">GET HIRED BY TOP MNC's</h2>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+              <!-- Company Logos -->
+              <div class="company-logo" data-aos="fade-up" data-aos-delay="100">                <img src="./assets/img/company/Swiggy_Logo_2024 (1).webp" alt="Swiggy" height="40" loading="lazy">
+              </div>
+              <div class="company-logo" data-aos="fade-up" data-aos-delay="200">
+                <img src="./assets/img/company/purepng.com-cognizant-logologobrand-logoiconslogos-251519938720kgjsa.png" alt="Cognizant" height="40" loading="lazy">
+              </div>
+              <div class="company-logo" data-aos="fade-up" data-aos-delay="300">
+                <img src="./assets/img/company/Accenture.svg.png" alt="Accenture" height="40" loading="lazy">
+              </div>
+              <div class="company-logo" data-aos="fade-up" data-aos-delay="400">
+                <img src="./assets/img/company/tcs.png" alt="TCS" height="40" loading="lazy">
+              </div>
+              <div class="company-logo" data-aos="fade-up" data-aos-delay="500">
+                <img src="./assets/img/company/Infosys_logo.svg.png" alt="Infosys" height="40" loading="lazy">
+              </div>
+              <div class="company-logo check-mark" data-aos="fade-up" data-aos-delay="600">
+                <i class="bi bi-check2-circle text-success" style="font-size: 2rem;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End MNC Section -->
+
+    <section class="container" >
       <div class="row align-items-center">
         <div class="col-xl-7">
           <h1 class="fs-1 mb-3 fw-semibold">Explore Your Potential with Path Builders Education Services</h1>
@@ -240,6 +279,110 @@
         </div>
     </div>
     </section>
+
+    <!-- Course Grid Section -->
+    <section class="course-grid py-5" id="courses">
+      <div class="container">
+        <div class="row g-4">          <!-- Row 1: Medical & Healthcare -->
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">                <img src="assets/img/courses/medical.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Medical" loading="lazy">
+              </div>
+                <h5 class="text-center mb-0 p-2">Medical</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">                <img src="assets/img/courses/paramedical.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Paramedical" loading="lazy">
+              </div>
+                <h5 class="text-center mb-0 p-2">Paramedical</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">                <img src="assets/img/courses/pharmacy.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Pharmacy" loading="lazy">
+              </div>
+                <h5 class="text-center mb-0 p-2">Pharmacy</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/nursing.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Nursing">
+              </div>
+                <h5 class="text-center mb-0 p-2">Nursing</h5>
+            </div>
+          </div>
+
+          <!-- Row 2: Professional Courses -->          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/engineering.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Engineering">
+              </div>
+                <h5 class="text-center mb-0 p-2">Engineering</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/management.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Management">
+              </div>
+                <h5 class="text-center mb-0 p-2">Management</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/commerce.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Commerce">
+              </div>
+                <h5 class="text-center mb-0 p-2">Commerce</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/law.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Law">
+              </div>
+                <h5 class="text-center mb-0 p-2">Law</h5>
+            </div>
+          </div>
+
+          <!-- Row 3: Creative & Tech Courses -->          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/art.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Arts & Humanities">
+              </div>
+                <h5 class="text-center mb-0 p-2">Arts & Humanities</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/engineering.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Information Tech">
+              </div>
+                <h5 class="text-center mb-0 p-2">Information Tech</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/fashiondes.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Fashion Designing">
+              </div>
+                <h5 class="text-center mb-0 p-2">Fashion Designing</h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="course-card h-100 rounded-3 overflow-hidden">
+              <div class="img-container position-relative" style="height: 200px;">
+                <img src="assets/img/courses/archi.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Architecture">
+              </div>
+                <h5 class="text-center mb-0 p-2">Architecture</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Course Grid Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
@@ -452,7 +595,7 @@
           
           
 
-          <div class="col-md-12">
+          <div class="col-md-12" id="colleges">
             <h2 class="mb-3 text-center">Colleges</h2>
             <div class="d-flex flex-wrap justify-content-center gap-2">
               <span class="badge rounded-pill bg-secondary clickable">STEPHEN COLLEGE JAMMU</span>
@@ -486,93 +629,80 @@
 
     </section><!-- /Clients Section -->
 
-    <section class="slider my-5" style="max-width: 1500px; margin: auto;">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner rounded-4">
-            <div class="carousel-item active">
-              <img src="assets/img/slider/slide2.jpg" class="d-block w-100" alt="About" style="height: 600px; object-fit: cover;">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/slider/slide1.jpg" class="d-block w-100" alt="About 2" style="height: 600px; object-fit: cover;">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/slider/slide3.jpg" class="d-block w-100" alt="Hero Background" style="height: 600px; object-fit: cover;">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
+    <!-- Scholarship Section -->
+    <section class="scholarship py-5">
       <div class="container">
-
-        <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item col-3">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-              <i class="bi bi-binoculars"></i>
-              <h4 class="d-none d-lg-block">Personalized Guidance</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-              <i class="bi bi-box-seam"></i>
-              <h4 class="d-none d-lg-block">Strong College Partnerships</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-              <i class="bi bi-brightness-high"></i>
-              <h4 class="d-none d-lg-block">- Transparent Process</h4>
-            </a>
-          </li>
-          <li class="nav-item col-3">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-              <i class="bi bi-command"></i>
-              <h4 class="d-none d-lg-block">Experienced Counselors</h4>
-            </a>
-          </li>
-        </ul><!-- End Tab Nav -->
-
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="tab-pane fade active show" id="features-tab-1">
-            <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Personalized Guidance</h3>
-                <p class="fst-italic">
-                  Every student’s journey is different. That’s why our guidance is tailored specifically to your goals, strengths, and background.
-                </p>
-                <ul>
-                  <li><i class="bi bi-check2-all"></i> <span>One-on-one counseling sessions to understand your academic and career ambitions.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Customized shortlisting of courses and universities that match your profile.</span></li>
-                  <li><i class="bi bi-check2-all"></i> <span>Support in creating compelling SOPs, resumes, and application material.</span></li>
-                </ul>
-                <p>
-                  From your first query to your final admission, our expert team walks with you at every step, ensuring you make confident and informed decisions for your future.
-                </p>
-              </div>
-              <div class="col-lg-6 order-1 order-lg-2 text-center">
-                  <img src="assets/img/working-4.jpg" alt="Experienced Counselors" class="img-fluid">
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">Scholarship Opportunities</h2>
+            <p class="text-muted">Empowering Your Education Through Financial Support</p>
           </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-6">
+            <a href="#contact" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-mortarboard-fill fs-1 text-primary"></i>
+                  </div>
+                  <h5 class="card-title mb-3">National Scholarship Scheme</h5>
+                  <p class="card-text text-muted small">Government-sponsored financial aid for meritorious students across India.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#contact" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-people-fill fs-1 text-success"></i>
+                  </div>
+                  <h5 class="card-title mb-3">ST/SC Scholarship</h5>
+                  <p class="card-text text-muted small">Special financial assistance for ST/SC students to pursue higher education.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#contact" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-star-fill fs-1 text-warning"></i>
+                  </div>
+                  <h5 class="card-title mb-3">Minority Scholarship</h5>
+                  <p class="card-text text-muted small">Supporting educational aspirations of students from minority communities.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#contact" class="text-decoration-none">
+              <div class="card h-100 border-0 shadow-sm hover-card">
+                <div class="card-body text-center p-4">
+                  <div class="icon-box mb-3">
+                    <i class="bi bi-clock-fill fs-1 text-info"></i>
+                  </div>
+                  <h5 class="card-title mb-3">Earlybird Scholarship</h5>
+                  <p class="card-text text-muted small">Special discounts for early admission and registration.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Scholarship Section -->
 
-
-        <div class="tab-pane fade" id="features-tab-2">
+    <!-- Study Abroad Section -->
+    <section id="study-abroad" class="section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="fw-bold mb-4">Study abroad after 12th</h2>
+            <p class="mb-4">After completing your 12th you can go for an undergraduate degree to study overseas. Studying abroad for an undergraduate program prepares you with Self-dependent skills, Intercultural communication skills, Language skills, Leadership qualities, Independent management, A high level of maturity to survive in a different environment
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
               <h3>Strong College Partnerships</h3>

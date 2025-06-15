@@ -1892,3 +1892,88 @@ section,
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
+
+/* Scholarship Cards */
+.hover-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+.hover-card .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 50%;
+  background: rgba(var(--primary-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover .icon-box {
+  background: var(--primary-color);
+  color: white;
+}
+
+.scholarship .card {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.scholarship .btn {
+  transition: all 0.3s ease;
+}
+
+.scholarship .card:hover .btn {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* MNC Section Styles */
+.mnc-section {
+  background-color: #f8f9fa;
+}
+
+.mnc-section .company-logo {
+  padding: 15px 25px;
+  transition: all 0.3s ease;
+}
+
+.mnc-section .company-logo:hover {
+  transform: translateY(-5px);
+}
+
+.mnc-section .company-logo img {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.mnc-section .company-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.mnc-section .check-mark {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
